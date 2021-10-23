@@ -1,0 +1,59 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <link rel="icon" href="/favicon.ico">
+  <title>1024</title>
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #content {
+      width: -webkit-fill-available;
+      height: -webkit-fill-available;
+      text-align: center;
+      padding-top: 35px;
+      font-size: 46px;
+      display: inline-block;
+      background-color: #2d2a2a;
+      color: hsla(0, 100%, 70%, 1);
+      word-wrap: break-word;
+      line-height: 68px;
+      letter-spacing: 3px;
+      -webkit-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+      box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  <script type="text/javascript">
+    window.onload = function () {
+      let contentElement = document.getElementById("content");
+      let contentArr = "Hello world <br> 祝各位程序🐵 节日快乐<br>永不脱发, 永无Bug".split("");
+      let content = "";
+      let index = 0;
+      let ID = setInterval(function () {
+        content += contentArr[index];
+        contentElement.innerHTML = content + "_";
+        index++;
+        if (index === contentArr.length) {
+          contentElement.innerHTML = content;
+          clearInterval(ID);
+        }
+      }, 100);
+    }
+  </script>
+</head>
+<body>
+<div id="content"></div>
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?e81357e29935aeab6f6db1ef34e614fa";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+</body>
+</html>
